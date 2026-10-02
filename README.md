@@ -2,7 +2,7 @@
 
 A web app that helps roommates share household chores fairly. It tracks who does what and when.
 
-> Status: planning. Nothing is built yet.
+> Status: early setup. The Django project is scaffolded.
 
 ## Goals
 
@@ -16,7 +16,22 @@ A web app that helps roommates share household chores fairly. It tracks who does
 
 ## Getting Started
 
-Setup instructions will go here once the tech stack is chosen.
+Built with Django 5.2 (Python 3.10+).
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+```
+
+Then open http://127.0.0.1:8000/.
+
+## Project Structure
+
+- `config/`: Django project settings and root URLs
+- `chores/`: the app that holds chore models, views and templates
 
 ## Author
 
